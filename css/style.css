@@ -413,6 +413,21 @@ textarea {
       .contact__btn {
         width: 100%; } }
 
+.btn.btn--bg {
+  background: #fff;
+  color: #333;
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn.btn--bg:hover {
+  background: #43ecc1;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(67, 236, 193, 0.5);
+}
+
 .project-cs-hero {
   color: #fff;
   background: linear-gradient(to right, rgba(	34, 48, 60, 0.8), rgba(	34, 48, 60, 0.8)), url(/khaledhambli/assets/svg/common-bg.svg);
