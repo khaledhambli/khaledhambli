@@ -213,19 +213,30 @@ textarea {
       .home-hero__mouse-scroll-cont {
         display: none; } }
   .home-hero__social {
-    width: 5rem; }
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
   .home-hero__social-icon-link {
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1.2rem;
     border-bottom: 2px solid #eee;
     transition: background .3s; }
     .home-hero__social-icon-link:hover {
-      background: rgba(255, 255, 255, 0.1); }
+      background: rgba(	67, 236, 193, 0.5); }
+    .home-hero__social-icon-link:hover .home-hero__social-icon {
+      transform: scale(1.1);
+      transition: transform 0.2s ease;}
     .home-hero__social-icon-link--bd-none {
       border-bottom: 0; }
   .home-hero__social-icon {
-    width: 100%; }
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;}
   .home-hero__content {
     position: absolute;
     top: 50%;
