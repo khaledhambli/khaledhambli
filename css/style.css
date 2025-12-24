@@ -450,12 +450,12 @@ textarea {
 
 /* LOGOS (classe utilisée dans le HTML) */
 .trusted__logo {
-  max-height: 72px;        /* 🔑 clé de l’uniformité */
+  height: 72px;        /* 🔑 clé de l’uniformité */
   width: auto;
   max-width: 100%;
   margin: 0 auto;
   display: block;
-  opacity: 0.85;
+  opacity: 0.95;
   filter: grayscale(100%);
   transition: 
     opacity 0.2s ease,
