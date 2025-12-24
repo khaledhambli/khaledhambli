@@ -420,63 +420,69 @@ textarea {
   color: #555;
 }
 
-/* ========== TRUSTED / LOGOS ========== */
+/* =========================
+   Ils m’ont fait confiance
+========================= */
 
-.trusted--card {
-  margin-top: 3rem;
+.trusted {
+  margin-top: 4rem;
+  padding: 2.8rem 3rem 3.2rem;
   background: #fff;
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 14px;
-  padding: 2.4rem 2.4rem;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.06);
 }
 
 .trusted__title {
-  margin: 0 0 2.2rem;
-  font-size: 1.9rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
   color: #111;
-  text-align: left;
 }
 
 /* grille logos */
 .trusted__logos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem 2.6rem;
+  gap: 2.6rem 3rem;
   align-items: center;
-  justify-items: center;
 }
 
-/* logos */
-.trusted__logos img {
-  width: 180px;          /* ⬅️ PLUS GRAND (effet Sanofi) */
-  height: 70px;
-  object-fit: contain;
+/* LOGOS (classe utilisée dans le HTML) */
+.trusted__logo {
+  max-height: 60px;        /* 🔑 clé de l’uniformité */
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  opacity: 0.85;
   filter: grayscale(100%);
-  opacity: 0.75;
-  transition: all 0.25s ease;
+  transition: 
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    filter 0.2s ease;
 }
 
-/* hover premium */
-.trusted__logos img:hover {
-  filter: grayscale(0%);
+.trusted__logo:hover {
   opacity: 1;
-  transform: translateY(-3px);
+  transform: scale(1.05);
+  filter: grayscale(0%);
 }
 
-/* responsive */
-@media (max-width: 56.25em) {
+/* Responsive tablette */
+@media (max-width: 768px) {
   .trusted__logos {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 37.5em) {
+/* Mobile */
+@media (max-width: 480px) {
   .trusted__logos {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
