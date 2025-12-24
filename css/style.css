@@ -279,7 +279,8 @@ textarea {
   .about__cta{
     grid-column: 1 / -1;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 5.5rem;  }
   .about__content-skills {
     display: flex;
     flex-direction: column;
@@ -288,9 +289,10 @@ textarea {
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem; }
-  .about__content-skills .about__content-title {
-    margin-top: 3.2rem;
-    margin-bottom: 2.4rem;  }
+  /* Titre "Ils m’ont fait confiance" : uniquement le 2e h3 (celui après .skills) */
+  .about__content-skills .skills + .about__content-title {
+    margin-top: 3.2rem;     /* espace après les tags skills */
+    margin-bottom: 2.4rem;  /* espace avant la grille de logos */  }
   @media only screen and (max-width: 37.5em) {
     .about__content-title {
       font-size: 2.4rem; } }
