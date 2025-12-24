@@ -301,19 +301,19 @@ textarea {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 12px;
-  padding: 1.1rem 1.4rem;
+
+  padding: 1.3rem 1.6rem;
   text-align: left;
+
   font-size: 1.45rem;
   line-height: 1.35;
   color: #222;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  min-height: 6.2rem;
-  display: flex;
-  align-items: center; 
-  justify-content: flex-start;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-}
+
+  min-height: 6.6rem;
+  display: block; }
 
 .pain-points__item:hover {
   transform: translateY(-3px);
