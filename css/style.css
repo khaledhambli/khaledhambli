@@ -286,6 +286,38 @@ textarea {
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
 
+.pain-points {
+  margin: 2.5rem auto 0;
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.pain-points__item {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 1.6rem 1.8rem;
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pain-points__item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.10);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .pain-points {
+    grid-template-columns: 1fr;
+  }
+}
+
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
