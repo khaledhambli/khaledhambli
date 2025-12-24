@@ -291,11 +291,10 @@ textarea {
 
 .pain-points {
   margin: 2.5rem auto 0;
-  max-width: 82rem;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.4rem;
-}
+  grid-template-columns: repeat(4, 22rem); 
+  gap: 1.6rem;
+  justify-content: center; }
 
 .pain-points__item {
   background: #fff;
@@ -322,7 +321,7 @@ textarea {
 
 /* Responsive */
 @media only screen and (max-width: 56.25em) { /* ~900px */
-  .pain-points { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pain-points { grid-template-columns: repeat(2, minmax(0, 22rem)); }
 }
 
 @media only screen and (max-width: 37.5em) { /* ~600px */
