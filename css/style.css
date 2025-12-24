@@ -291,8 +291,8 @@ textarea {
     margin-bottom: 3rem; }
   /* Titre "Ils m’ont fait confiance" : uniquement le 2e h3 (celui après .skills) */
   .about__content-skills .skills + .about__content-title {
-    margin-top: 3.2rem;     /* espace après les tags skills */
-    margin-bottom: 2.4rem;  /* espace avant la grille de logos */  }
+    margin-top: 2.2rem;     /* espace après les tags skills */
+    margin-bottom: 1.8rem;  /* espace avant la grille de logos */  }
   @media only screen and (max-width: 37.5em) {
     .about__content-title {
       font-size: 2.4rem; } }
@@ -444,7 +444,7 @@ textarea {
 ========================= */
 
 .trusted {
-  margin-top: 3.2rem;
+  margin-top: 0;
   flex : 1;
   display: flex;
   flex-direction: column;
@@ -498,17 +498,6 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
-
-/* Recalage : le bloc logos finit au même niveau que la 3e card */
-.about__content-skills .skills + .about__content-title{
-  margin-top: 2.2rem;     /* avant: 3.2rem */
-  margin-bottom: 1.8rem;  /* avant: 2.4rem */
-}
-
-.trusted{
-  margin-top: 0;          /* avant: 3.2rem */
-}
-
 
 /* Responsive: 1 colonne => CTA reste centré */
 @media only screen and (max-width: 56.25em){
