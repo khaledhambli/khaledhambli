@@ -280,7 +280,7 @@ textarea {
     grid-column: 1 / -1;
     display: flex;
     justify-content: center;
-    margin-top: 4.5rem;  }
+    margin-top: 3.5rem;  }
   .about__content-skills {
     display: flex;
     flex-direction: column;
