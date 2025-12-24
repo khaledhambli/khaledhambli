@@ -280,7 +280,7 @@ textarea {
     grid-column: 1 / -1;
     display: flex;
     justify-content: center;
-    margin-top: 5.5rem;  }
+    margin-top: 4.5rem;  }
   .about__content-skills {
     display: flex;
     flex-direction: column;
@@ -498,6 +498,17 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* Recalage : le bloc logos finit au même niveau que la 3e card */
+.about__content-skills .skills + .about__content-title{
+  margin-top: 2.2rem;     /* avant: 3.2rem */
+  margin-bottom: 1.8rem;  /* avant: 2.4rem */
+}
+
+.trusted{
+  margin-top: 0;          /* avant: 3.2rem */
+}
+
 
 /* Responsive: 1 colonne => CTA reste centré */
 @media only screen and (max-width: 56.25em){
