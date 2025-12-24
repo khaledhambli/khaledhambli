@@ -450,7 +450,7 @@ textarea {
 
 /* LOGOS (classe utilisée dans le HTML) */
 .trusted__logo {
-  max-height: 60px;        /* 🔑 clé de l’uniformité */
+  max-height: 72px;        /* 🔑 clé de l’uniformité */
   width: auto;
   max-width: 100%;
   margin: 0 auto;
