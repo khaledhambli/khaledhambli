@@ -301,14 +301,14 @@ textarea {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 12px;
-  padding: 1.6rem;
+  padding: 1.1rem 1.2rem;
   text-align: center;
   font-size: 1.45rem;
-  line-height: 1.45;
+  line-height: 1.35;
   color: #222;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  min-height: 9rem;
+  min-height: 6.2rem;
   display: flex;
   align-items: center; 
   justify-content: center;
