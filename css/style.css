@@ -420,6 +420,45 @@ textarea {
   color: #555;
 }
 
+.trusted {
+  background: #fafafa;
+  padding: 6rem 0 5rem;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.trusted__title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+  color: #111;
+}
+
+.trusted__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.trusted__logos img {
+  max-height: 50px;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: 0.65;
+  filter: grayscale(100%);
+  transition: opacity .2s ease, filter .2s ease, transform .2s ease;
+}
+
+.trusted__logos img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: translateY(-2px);
+}
+
+
+
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
